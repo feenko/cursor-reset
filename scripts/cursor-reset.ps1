@@ -123,7 +123,10 @@ function Update-HWIDs {
         Stop-CursorProcess
         Remove-CursorIdentifiers
         
-        Write-Host "`nDone! Please restart your PC to apply the changes." -ForegroundColor Green
+        Write-Host "`nDone!" -ForegroundColor Green
+        Write-Host "Please restart your PC to apply the changes." -ForegroundColor Green
+        Write-Host "`nIf you appreciate my hard work, please consider starring the repository! :D" -ForegroundColor Green
+        Write-Host "https://github.com/feenko/cursor-reset" -ForegroundColor Green
     }
     catch {
         Write-Host "`nError updating HWID values: $($_.Exception.Message)" -ForegroundColor Red
